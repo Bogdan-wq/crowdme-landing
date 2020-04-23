@@ -298,6 +298,8 @@ $bgcolor-find-buy:#f5f9eb;
   display: flex;
   position: relative;
 
+
+
   &:not(:first-child) {
     @media screen and (max-width: 850px){
       margin-top:40px;
