@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat,Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/crowdme-landing.css">
+    <title>Crowd me Landing</title>
+</head>
+<body>
+
+<!--Nav bar-->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="nav-bar__inner">
+                <div class="nav-bar__logo">
+                    <img src="assets/images/logo/logo.png" alt="Logo">
+                </div>
+                <div class="burger">
+                    <div class="burger__menu" data-dropdown="true">
+                        <span class="burger__bar" data-dropdown="true"></span>
+                        <span class="burger__bar" data-dropdown="true"></span>
+                        <span class="burger__bar" data-dropdown="true"></span>
+                    </div>
+                    <div class="burger__content" id="burgerContentJS">
+                        <nav class="nav-bar__nav nav">
+                            <a href="#home" class="nav__item">HOME</a>
+                            <a href="#our-work" class="nav__item">HOW IT WORKS</a>
+                            <a href="#project" class="nav__item">DISCOVER A PROJECT</a>
+                            <a href="#" class="nav__item">BLOG</a>
+                            <a href="#" class="nav__item">FIND OUT MORE</a>
+                            <a href="#" class="nav__item">LOGIN</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Header-->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="header__title">Intellectual Property has the Shelf Life</h1>
+                <span class="header__label">of a Banana.</span>
+                <a href="#" class="header__button">Become a Member</a>
+            </div>
+        </div>
+    </header>
+
+<!--Our work-->
+
+    <section class="our-work" id="our-work">
+        <div class="container">
+            <div class="our-work__inner">
+                <img class="our-work__image" alt="Up" src="./assets/images/icons/1.png">
+                <h1 class="our-work__title">Our work is the presentation
+                    of our capabilities.</h1>
+                <p class="our-work__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <p class="our-work__paragraph">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!--Tabs-->
+
+    <section class="tabs" id="project">
+        <div class="container">
+            <div class="tabs__inner">
+
+                <div class="tabs__togglers togglers">
+                    <div class="togglers__item toggler-item" onclick="toggle('tabs__block_first')">
+                        <div class="toggler-item__num">1</div>
+                        <h2 class="toggler-item__title">Simple</h2>
+                    </div>
+                    <div class="togglers__item toggler-item" onclick="toggle('tabs__block_second')">
+                        <div class="toggler-item__num">2</div>
+                        <h2 class="toggler-item__title">Transparent</h2>
+                    </div>
+                    <div class="togglers__item toggler-item" onclick="toggle('tabs__block_third')">
+                        <div class="toggler-item__num">3</div>
+                        <h2 class="toggler-item__title">Collaborative</h2>
+                    </div>
+                </div>
+
+                <div id="tabs-containerJS">
+                    <div class="tabs__block toggled-content tabs__block_active" id="tabs__block_first">
+                        <div class="toggled-content__item toggled-content-item">
+                            <img src="assets/images/icons/glasses.png" alt="Glasses">
+                            <div class="toggled-content-item__text">
+                                <h2 class="toggled-content-item__title">Browse projects, like booking a hotel online </h2>
+                                <p class="toggled-content-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__block toggled-content" id="tabs__block_second">
+                        <div class="toggled-content__item toggled-content-item">
+                            <img src="assets/images/icons/glasses.png" alt="Glasses">
+                            <div class="toggled-content-item__text">
+                                <h2 class="toggled-content-item__title">Browse projects, like booking a hotel online </h2>
+                                <p class="toggled-content-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt massa urna, sed mollis elit egestas nec. Etiam fringilla lacus lorem, in congue elit malesuada quis. Curabitur viverra efficitur odio. Aliquam nec urna ultrices, rutrum sapien a, scelerisque risus. Duis varius leo non venenatis commodo. Nullam et molestie augue, ut semper sapien.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__block toggled-content" id="tabs__block_third">
+                        <div class="toggled-content__item toggled-content-item">
+                            <img src="assets/images/icons/glasses.png" alt="Glasses">
+                            <div class="toggled-content-item__text">
+                                <h2 class="toggled-content-item__title">Browse projects, like booking a hotel online </h2>
+                                <p class="toggled-content-item__paragraph">Donec maximus non ligula ut sodales. Proin quis aliquet mauris. Phasellus ut ornare est, ac vestibulum massa. Maecenas nec est sed nisi congue convallis. Vestibulum ac felis nisl. Sed neque felis, ornare at molestie eget, rhoncus a orci. Suspendisse auctor fermentum lacus non aliquet. Phasellus suscipit blandit nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!--    Find-->
+    <section class="find">
+        <div class="find__background"></div>
+
+
+        <div class="find__content">
+            <div class="container">
+                <div class="find__inner">
+                    <div class="find__item find-item">
+                        <div class="find-item__image">
+                            <img src="assets/images/icons/sofa.png" alt="Sofa">
+                        </div>
+
+                        <div class="find-item__text">
+                            <h2 class="find-item__title">Find Properties</h2>
+                            <p class="find-item__paragraph">Sign up to browse the portfolio.
+                                Your journey to becoming a real estate baron starts here.</p>
+                            <button class="button button_blue">Become A Member</button>
+                        </div>
+                    </div>
+                    <div class="find__item find-item">
+                        <div class="find-item__image">
+                            <img src="assets/images/icons/wallet.png" alt="Sofa">
+                        </div>
+                        <div class="find-item__text">
+                            <h2 class="find-item__title">Find Buyers</h2>
+                            <p class="find-item__paragraph">Sign up to browse the portfolio.
+                                Your journey to becoming a real estate baron starts here.</p>
+                            <button class="button button_lgreen">Submit Your Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<!--Featured projects-->
+    <section class="projects">
+        <div class="container">
+            <div class="projects__inner">
+                <div class="projects__header">
+                    <div class="projects__text">
+                        <h1 class="projects__title">Featured Projects</h1>
+                        <p class="projects__paragraph">Brief details of new and popular projects. To view full listings, you will be required to
+                            sign up and become a member.</p>
+                    </div>
+                    <button class="button button__white">Become a Member</button>
+                </div>
+
+                <div class="projects__row">
+                    <div class="projects__column projects-item">
+                        <div class="projects-item__image projects-item-image">
+                            <img src="./assets/images/projects/1.png">
+                            <span class="projects-item-image__newlabel">NEW</span>
+                            <div class="projects-item-image__fromlabel">
+                                <span>From</span>
+                                <span>GBP  3600</span>
+                            </div>
+                        </div>
+
+                        <div class="projects-item__text">
+                            <h2 class="projects-item__title">Ontario Tower, LONDON</h2>
+                            <p class="projects-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="projects-item__loader-block loader-block">
+                                <div class="loader-block__loader">
+                                    <div class="loader-block__loaded loader-block__loaded_10per"></div>
+                                </div>
+                                <div class="loader-block__labels">
+                                    <span class="loader-block__percents">10% Funded</span>
+                                    <span class="loader-block__days-remain">8 Days Left</span>
+                                </div>
+                            </div>
+                            <a href="#" class="projects-item__details">See Project Details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="projects__column projects-item">
+                        <div class="projects-item__image projects-item-image">
+                            <img src="./assets/images/projects/2.png">
+                            <span class="projects-item-image__newlabel">NEW</span>
+                            <div class="projects-item-image__fromlabel">
+                                <span>From</span>
+                                <span>GBP  3600</span>
+                            </div>
+                        </div>
+
+                        <div class="projects-item__text">
+                            <h2 class="projects-item__title">Ontario Tower, LONDON</h2>
+                            <p class="projects-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="projects-item__loader-block loader-block">
+                                <div class="loader-block__loader">
+                                    <div class="loader-block__loaded loader-block__loaded_60per"></div>
+                                </div>
+                                <div class="loader-block__labels">
+                                    <span class="loader-block__percents">60% Funded</span>
+                                    <span class="loader-block__days-remain">8 Days Left</span>
+                                </div>
+                            </div>
+                            <a href="#" class="projects-item__details">See Project Details</a>
+                        </div>
+                    </div>
+
+
+                    <div class="projects__column projects-item">
+                        <div class="projects-item__image projects-item-image">
+                            <img src="./assets/images/projects/1.png">
+                            <span class="projects-item-image__newlabel">NEW</span>
+                            <div class="projects-item-image__fromlabel">
+                                <span>From</span>
+                                <span>GBP  3600</span>
+                            </div>
+                        </div>
+                        <div class="projects-item__text">
+                            <h2 class="projects-item__title">Ontario Tower, LONDON</h2>
+                            <p class="projects-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="projects-item__loader-block loader-block">
+                                <div class="loader-block__loader">
+                                    <div class="loader-block__loaded loader-block__loaded_10per"></div>
+                                </div>
+                                <div class="loader-block__labels">
+                                    <span class="loader-block__percents">10% Funded</span>
+                                    <span class="loader-block__days-remain">8 Days Left</span>
+                                </div>
+                            </div>
+                            <a href="#" class="projects-item__details">See Project Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!--International Community-->
+    <section class="be-part">
+        <div class="container">
+            <div class="be-part__inner">
+                <h1 class="be-part__title">Be Part of a Growing International Community</h1>
+                <p class="be-part__paragraph">One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
+                <div class="be-part__quotes">
+
+
+                    <div class="quotes__item quotes-block-item">
+                        <div class="quotes-block-item__quote">
+                            <h2 class="quotes-block-item__title">One of the Best </h2>
+                            <p class="quotes-block-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="quotes-block-item__author">
+                            <img src="assets/images/be-part/1.png">
+                            <span class="quotes-block-item__name">David Beckham</span>
+                        </div>
+                    </div>
+
+
+                    <div class="quotes__item quotes-block-item">
+                        <div class="quotes-block-item__quote">
+                            <h2 class="quotes-block-item__title">Excellent</h2>
+                            <p class="quotes-block-item__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="quotes-block-item__author">
+                            <img src="assets/images/be-part/2.png">
+                            <span class="quotes-block-item__name">David Beckham</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brands brands">
+                    <img src="assets/images/brands/brands.png" alt="Brands">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/burger.js"></script>
+    <script src="assets/js/anchor.js"></script>
+    <script src="assets/js/tabs.js"></script>
+
+
+</body>
+</html>
