@@ -1,0 +1,52 @@
+@mixin burger-bars-and-menu($bg-color,$height,$breakpoint) {
+
+
+  &__menu {
+    display: none;
+    @media screen and (max-width:$breakpoint) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+    }
+  }
+
+
+  &__bar {
+    width:100%;
+    height:$height;
+    background-color: $bg-color;
+  }
+
+  &__content {
+    position: relative;
+    display: block;
+    @media screen and (max-width: $breakpoint) {
+      display: none;
+    }
+    &.active {
+      display: block;
+    }
+  }
+
+  .nav {
+    @media screen and (max-width: $breakpoint) {
+      flex-direction: column;
+      position: absolute;
+      align-items: stretch;
+      @content;
+    }
+  }
+}
+
+
+@mixin burger-items($breakpoint) {
+  .nav {
+    &__item {
+      @media screen and (max-width:$breakpoint) {
+        @content;
+      }
+    }
+  }
+}
